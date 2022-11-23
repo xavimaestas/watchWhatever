@@ -1,13 +1,4 @@
-body {
-    
+#inputs {
+    margin-bottom: 2rem;
 }
 
-.gsce-search {
-    margin: 0;
-    padding: 0; 
-}
-
-
-.gsc-adBlock {
-        display: none;
-    }

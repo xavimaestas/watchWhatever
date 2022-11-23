@@ -25,7 +25,7 @@
         <p>
             <strong>TV Shows:</strong> search TV shows in Google Search, go to main IMDB page.
             <br>
-            Grab "tt" ID from URL, ex: tt1300854, input into Movies bar.
+            Grab "tt" ID from URL, ex: tt1300854, input into TV bar.
             <br>
             Input Season and Episode you want in appropriate box. For single 
             <br>
@@ -36,32 +36,32 @@
 
     </div>
 
+    <div id="inputs">
+        <div>
+            <h2>Movies</h2>
+            <input type="text" id="movie-input" placeholder="enter 'tt' ID from IMDB">
+            <button class="button" id="movie-button">enter</button>
+        <a target="_blank" href="#" id="movie-output">
+        </a>
+        </div>
 
-    <div>
-        <h2>Movies</h2>
-        <input type="text" id="movie-input" placeholder="enter 'tt' ID from IMDB">
-        <button class="button" id="movie-button">enter</button>
-    <a target="_blank" href="#" id="movie-output">
-    </a>
+        <div>
+            <h2>TV</h2>
+            <input type="text" id="tv-tt-input" placeholder="enter 'tt' ID from IMDB">
+            <input type="text" id="tv-season" placeholder="Enter Season # ex. 1">
+            <input type="text" id="tv-episode" placeholder="Enter Episode # ex. 1">
+            <button class="button" id="tv-button">enter</button>
+        <a target="_blank" href="#" id="tv-output">
+        </a>
+        </div>
     </div>
-
-    <div>
-        <h2>TV</h2>
-        <input type="text" id="tv-tt-input" placeholder="enter 'tt' ID from IMDB">
-        <input type="text" id="tv-season" placeholder="Enter Season # ex. 1">
-        <input type="text" id="tv-episode" placeholder="Enter Episode # ex. 1">
-        <button class="button" id="tv-button">enter</button>
-    <a target="_blank" href="#" id="tv-output">
-    </a>
-    </div>
-
     
 
     <script async src="https://cse.google.com/cse.js?cx=b4c7dc4510e844cbf">
     </script>
     <div class="gcse-searchbox"></div>
 
-    <div class="gcse-searchresults" linktarget="_parent"></div>
+    <div class="gcse-searchresults" ></div>
     
     
     <script src="index.js"></script>
