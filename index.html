@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="instructions">
+        <h1>Instructions</h1>
+        <p>
+            <strong>Movies:</strong> search movie in Google search, go to main IMDB page.
+            <br> 
+            Grab "tt" ID from URL, ex: tt1300854, input into Movies bar
+            <br>
+            and press enter for movie link. Use an ad blocker and click until
+            <br>
+            it plays. If you get a 404, they don't have the movie yet. If it's 
+            <br>
+            lagging, try a different source from the drop down.      
+        </p>
+
+        <p>
+            <strong>TV Shows:</strong> search TV shows in Google Search, go to main IMDB page.
+            <br>
+            Grab "tt" ID from URL, ex: tt1300854, input into Movies bar.
+            <br>
+            Input Season and Episode you want in appropriate box. For single 
+            <br>
+            values do not put a "0" before the numbers. Press enter after entering
+            <br> 
+            all the values to generate your link. See tips on watching above.  
+        </p>
+
+    </div>
+
+
+    <div>
+        <h2>Movies</h2>
+        <input type="text" id="movie-input" placeholder="enter 'tt' ID from IMDB">
+        <button class="button" id="movie-button">enter</button>
+    <a target="_blank" href="#" id="movie-output">
+    </a>
+    </div>
+
+    <div>
+        <h2>TV</h2>
+        <input type="text" id="tv-tt-input" placeholder="enter 'tt' ID from IMDB">
+        <input type="text" id="tv-season" placeholder="Enter Season # ex. 1">
+        <input type="text" id="tv-episode" placeholder="Enter Episode # ex. 1">
+        <button class="button" id="tv-button">enter</button>
+    <a target="_blank" href="#" id="tv-output">
+    </a>
+    </div>
+
+    
+
+    <script async src="https://cse.google.com/cse.js?cx=b4c7dc4510e844cbf">
+    </script>
+    <div class="gcse-searchbox"></div>
+
+    <div class="gcse-searchresults" linktarget="_parent"></div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
